@@ -1,54 +1,22 @@
 # create-react-app 主流 H5 适配方案
 
-项目配置了当前如何打包多页面打包的配置文件、和如何适配
+项目配置了 postcsss 的配置进行当前 vw\vh 的 H5 的配置
 
 ---
 
-## 目录
+## 运行指令
 
 ```
-.
-├── README.md
-├── babel.config.js
-├── list.txt
-├── package.json
-├── postcss.config.js
-├── public
-│   ├── favicon.ico
-│   └── index.html
-├── src
-│   ├── assets
-│   │   └── logo.png
-│   ├── components
-│   │   └── HelloWorld.vue
-│   └── pages
-│       ├── admin
-│       │   ├── App.vue
-│       │   ├── main.js
-│       │   ├── router.js
-│       │   ├── store.js
-│       │   └── views
-│       │       ├── About.vue
-│       │       └── Home.vue
-│       └── index
-│           ├── App.vue
-│           ├── main.js
-│           ├── router.js
-│           ├── store.js
-│           └── views
-│               ├── About.vue
-│               └── Home.vue
-├── vue.config.js
-└── yarn.lock
+npm install
+
+npm run start
+
+npm run build
 ```
 
 ## 参考资料
 
-[如何使用 vue-cli4 构建一个多页应用](https://blog.liuyunzhuge.com/2019/12/21/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8vue-cli4%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A4%9A%E9%A1%B5%E5%BA%94%E7%94%A8/)<br /> [vue-cli3.0 多页面配置](https://juejin.im/post/6844903881265152008#comment)
-
-## 其他
-
-如果需要详情配置根据自己的需求到[官网](https://cli.vuejs.org/zh/config/#%E7%9B%AE%E6%A0%87%E6%B5%8F%E8%A7%88%E5%99%A8)配置
+[移动端 vw 适配方案](https://blog.wdg.pub/frontend/vw.html)<br /> [vue-cli H5 适配 多页配置](https://github.com/yangfan-coder/amazing-vue-MultiplePages)
 
 ---
 
