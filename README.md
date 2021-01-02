@@ -4,6 +4,10 @@
 
 ---
 
+## 注意：
+
+运行 npm run eject 需要手动的把 config/webpack.config.js 的 110 行 postcss 的 plugins 删除、采用 postcss.config.js 进行覆盖
+
 ## 运行指令
 
 ```
