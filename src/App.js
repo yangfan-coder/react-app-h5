@@ -1,40 +1,16 @@
-import { useState, useEffect } from 'react';
-// import { Checkbox, Modal, List } from 'antd-mobile';
-import { Checkbox, List, Modal } from 'antd-mobile';
-const { CheckboxItem } = Checkbox;
+import React from 'react';
+
 function App() {
-  const [checkboxValue, setCheckboxValue] = useState(false); // 优秀作业的选中状态
-  const [visible, setVisible] = useState(false); // 遮罩层
-
-  useEffect(() => {
-    if (checkboxValue) {
-      setVisible(true);
-    }
-  }, [checkboxValue]);
-
-  // 关闭遮罩层
-  const onClose = () => {
-    setVisible(false);
-  };
-
   return (
     <div className='App'>
-      <List>
-        <CheckboxItem checked={checkboxValue} onClick={() => setCheckboxValue(!checkboxValue)}>
-          已选为优秀作业
-        </CheckboxItem>
-      </List>
-      <Modal
-        popup
-        afterClose={() => {
-          alert('afterClose');
-        }}
-        visible={visible}
-        onClose={onClose}
-        animationType='slide-up'
-      >
-        <p>1111111111</p>
-      </Modal>
+      <h1>hello , 欢迎使用HTML5移动端适配方案</h1>
+      <p>请打开控制台查看当前元素的缩放单位</p>
+      <p>具体配置请参考postcss.config.js 配置文件</p>
+      <h3>
+        参考链接：
+        <a href='https://juejin.cn/post/6844903917126434829'>链接1</a>&nbsp;&nbsp;
+        <a href='https://segmentfault.com/a/1190000024497379'>链接2</a>
+      </h3>
     </div>
   );
 }
